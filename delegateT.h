@@ -66,7 +66,7 @@ public:
         : obj(_object), invoke_fun_(_memfun)
     {
     }
-    virtual bool isType(const std::type_info &_type)
+    virtual bool isType(const std::type_info &_type) override
     {
         return typeid(ClassMemberDelegateT<T, Return (T::*)(Args...)>) == _type;
     }
@@ -88,7 +88,7 @@ public:
                         _delegate);
         return invoke_fun_ == cast->invoke_fun_ && obj == cast->obj;
     }
-    virtual bool canInvoke() const { return obj && invoke_fun_; }
+    virtual bool canInvoke() const override { return (obj && invoke_fun_); }
 
 private:
     memInvokeFun invoke_fun_ = nullptr;
