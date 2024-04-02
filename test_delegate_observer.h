@@ -20,7 +20,8 @@ class DelegateWatch {
   public:
     DelegateWatch() {
         int p = 0;
-        DelegateObserver::instance()->sort_element.add(this, &delegate_watch::sortElement);
+        DelegateObserver::instance()->sort_element.add(
+                this, &DelegateWatch::sortElement);
     }
 
     void sortElement(std::vector<int> &element) {
