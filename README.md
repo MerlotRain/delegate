@@ -8,8 +8,6 @@ The essence is to encapsulate callback functions, providing a safer and more con
 
 No compilation required, just import the project directly
 
-## Build Status
-
 ## Building
 
 Prerequisites:
