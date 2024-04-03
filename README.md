@@ -1,7 +1,18 @@
 # delegate
 
-封装静态函数和类成员函数的委托
+----
 
-本质是对回调函数的封装，提供一种更加安全和便捷的方式
+Delegates that encapsulate static functions and class member functions
 
-不需要编译，直接引入工程即可
+The essence is to encapsulate callback functions, providing a safer and more convenient way
+
+No compilation required, just import the project directly
+
+## Build Status
+
+## Building
+
+Prerequisites:
+
+- C++ compiler
+- Minimum use of C++11 version
