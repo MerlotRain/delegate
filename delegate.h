@@ -81,7 +81,7 @@ public:
             auto it = invoke_delegates.begin();
             while (it != invoke_delegates.end())
             {
-                if (oneDelegate->compare(it.get()))
+                if (oneDelegate->compare(it->get()))
                 {
                     invoke_delegates.erase(it);
                     return;
