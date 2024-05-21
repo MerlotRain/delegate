@@ -12,3 +12,5 @@ add_executable(test_class_member_delegate test_class_member_delegate.cpp)
 add_executable(test_delegate_observer test_delegate_observer.cpp test_delegate_observer_main.cpp)
 
 add_executable(test_class_static_delegate test_class_static_delegate.cpp)
+
+add_executable(test_smarter_pointer test_smarter_pointer.cpp)
